@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    color: #000000;
+  }
+  
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-top,
+  .menu-right {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .menu-right,
+  .menu__item {
+    margin: 0px 30px;
+  }
+  
+  .menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 6px;
+    border-bottom: 2px transparent solid;
+    transition: 0.2s;
+    font-style: normal;
+    color: #000000;
+  }
+  
+  .menu__item:hover,
+  .menu__item.active {
+    border-bottom: 2px #E51937 solid;
+    color: #E51937;
+  }
+  
+  .item-s {
+    margin-right: 63px;
+  }
+  
+  .item-x {
+    margin-right: 25px;
+  }
+  
+  .item-3 {
+    margin-right: 44px;
+  }
+  
+  .item-r {
+    margin-right: 46px;
+  }
+  
+  .tesla {
+    text-align: center;
+    background-image: url(./img/Tesla_logocar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 594px;
+    margin-bottom: 26px;
+  }
+  
+  .tesla__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110px;
+  }
+  
+  .tesla__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .tesla-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 37px;
+  
+  }
+  
+  .info-block {
+    display: flex;
+    align-items: center;
+    margin-right: 81px;
+  }
+  
+  .info-block__img {
+    width: 46px;
+    margin-right: 14px;
+  }
+  
+  .info-block:nth-child(2) .info-block__img {
+    background-image: url(./img/Road-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 45px;
+    height: 58px;
+  }
+  
+  .info-block__text_bold {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    margin-right: 6px;
+    margin-bottom: 13px;
+  }
+  
+  .info-block__text_bold span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: middle;
+  }
+  
+  .info-block__text_comment {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  .test-drive {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 24px;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .test-drive__img {
+    margin-right: 7px;
+  }
+  
+  .order {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E51937;
+    border: 2px solid #E51937;
+    min-width: 160px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .go-bottom {
+    text-align: center;
+    display: block;
+  }
+  
+  @media (max-width:768px) and (min-width: 375px) {
+    .container {
+      width: 768px;
+    }
+  
+    .menu__item {
+      display: none;
+    }
+  
+    .tesla {
+      min-height: 435px;
+      background-size: contain;
+      background-position: center bottom;
+    }
+  
+    .tesla-info {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 63px;
+    }
+  
+    nav {
+      margin: 24px 33px 94px 15px;
+    }
+  
+    .tesla__title {
+      font-size: 90px;
+      line-height: 110px;
+    }
+  
+    .tesla__text {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  
+    .info-block {
+      margin-right: 65px;
+      margin-left: 65px;
+      margin-bottom: 56px;
+    }
+  
+    .info-block:nth-child(2) .info-block__img {
+      background-image: url(./img/Road-icon-small.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 38px;
+      height: 61px;
+    }
+  
+    .info-block__img {
+      width: 65px;
+    }
+  
+    .info-block__text_bold {
+      font-size: 50px;
+      line-height: 61px;
+      margin-bottom: 2px;
+    }
+  
+    .info-block__text_comment {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  
+    .test-drive {
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 0px;
+      margin-right: 34px;
+      color: #E51937;
+      filter: none;
+    }
+  
+    .test-drive__img {
+      color: #E51937;
+      width: 30px;
+      height: 30px;
+    }
+  
+    .order {
+      width: 220px;
+      height: 55px;
+      font-size: 16px;
+      line-height: 55px;
+      background: #E51937;
+      color: #fff;
+    }
+  }
+  
+  @media (max-width:375px) {
+    .container {
+      width: 375px;
+    }
+  
+    .menu__item {
+      display: none;
+    }
+  
+    .tesla {
+      min-height: 300px;
+      background-size: contain;
+      background-position: center bottom;
+    }
+  
+    .tesla-info {
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+  
+    nav {
+      margin: 5px 21px 43px 2px;
+    }
+  
+    .tesla__title {
+      font-size: 50px;
+      line-height: 61px;
+    }
+  
+    .tesla__text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  
+    .info-block {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 43px;
+    }
+  
+    .info-block:nth-child(2) .info-block__img {
+      background-image: url(./img/Road-icon-small.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 22px;
+      height: 35px;
+    }
+  
+    .info-block:nth-child(2) {
+      margin-left: 20px;
+    }
+  
+    .info-block__text_bold {
+      font-size: 27px;
+      line-height: 27px;
+      margin-bottom: 2px;
+    }
+  
+    .info-block__text_comment {
+      font-size: 10px;
+      line-height: 10px;
+    }
+  
+    .test-drive {
+      margin-left: 0;
+      margin-right: 25px;
+      color: #E51937;
+    }
+  
+    .test-drive__img {
+      color: #E51937;
+    }
+  
+    .order {
+      width: 160px;
+      height: 40px;
+      font-size: 13px;
+      line-height: 40px;
+      background: #E51937;
+      color: #fff;
+    }
+  }
